@@ -1,3 +1,5 @@
+/*For changing the text */
+
 var randomStrings = [
         "Do It.",
         "Just Do It.",
@@ -12,9 +14,6 @@ var randomStrings = [
     ];
 
 
-
-
-
     var randomDiv = document.getElementById("myRandomQuote");
 
     document.getElementById("noButton").addEventListener("click", function() {
@@ -26,9 +25,16 @@ var randomStrings = [
 $("#myRandomQuote")
     .appendTo("h3");
 
+/*For changing the image */
 
+
+/*For the yes button click */
 
 document.getElementById("yesButton").onclick = function() {
    document.getElementById("image").src="img/shia10.gif";
    document.getElementById("myRandomQuote").innerHTML="You will walk out loving yourself. Not in some grandiose, you’re fucking awesome way, but in like, you’re a part of a community.";
+};
+
+document.getElementById("noButton").onclick = function() {
+  document.getElementById("image").src="img/shia1.png";
 };
